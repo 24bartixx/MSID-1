@@ -58,6 +58,12 @@ Most common categories:
 * The best scores were from Animation and Multimedia Design students
 
 ### Age at enrollment
+![Age errorplot](https://github.com/user-attachments/assets/f21e5e47-5596-4890-bc58-45f2e20ca05c)
+![Admission grade vs age regression](https://github.com/user-attachments/assets/8df2ade1-c035-4e6a-9133-d4881674dc99)
+* Students' admission grades get slightly worse if they get older
+
+![regression params 1st vs age regression](https://github.com/user-attachments/assets/79ac0202-4795-46ab-b100-63c30ac7553d)
+* The older students are, the more classes and evaluations they take, but they score worse and fail more frequently
 
 ![Age at enrollment vs target violinplot](https://github.com/user-attachments/assets/124fb07a-d0d0-4422-a476-6b88f6d7edcc)
 ![Age at enrollment vs target boxplot](https://github.com/user-attachments/assets/4ff42621-df9e-4c7e-bb7a-534fc8926df6)
@@ -75,8 +81,6 @@ Most common categories:
 * Students who drop out often don't take evaluations at all during 1st sem
 * Students who are debtors try to take more evaluations than students without debt because of liability
 
-
-
 ![grades 1st sem vs target violinplot (scholarships)](https://github.com/user-attachments/assets/97bd85ee-1ab2-4616-ab24-5aebe517569a)
 ![grades 1st sem vs target violinplot (deptors)](https://github.com/user-attachments/assets/f24b0baf-92b3-48a2-a157-cb366b85ab23)
 ![grades 1st sem histogram (target)](https://github.com/user-attachments/assets/bc100be9-a255-4ee6-a046-3358e166e938)
@@ -91,6 +95,12 @@ Most common categories:
 * Graduates pass most units in the 1st semester
 
 ### Economic
+![GDP and unemployment vs age regressions](https://github.com/user-attachments/assets/aad68b9e-5fe6-4869-b53b-1f1c38067204)
+* Middle-aged and elderly students are more likely to enroll in bad times
+
+![Grade 1st vs GDP regression](https://github.com/user-attachments/assets/5ddfb00f-c46a-4886-8066-f184f5d0f401)
+* Growing economy -> students get better grades in the 1st semester
+
 ![unemploymenet rate vs target (deptor)](https://github.com/user-attachments/assets/7a926890-f904-43dd-80bd-1a03c9826fb6)
 ![inflation rate vs target (deptor)1](https://github.com/user-attachments/assets/730c9d2e-6889-4fee-b8df-e10e8127cbba)
 ![GDP rate vs target (deptor)](https://github.com/user-attachments/assets/6339aa27-6771-4604-acd8-f830f4d5c8c0)
