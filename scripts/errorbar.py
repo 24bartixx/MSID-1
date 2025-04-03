@@ -2,15 +2,22 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 
-def errorbar(data, addition = ""):
+def errorbar(data, addition = "", should_median = False):
     
     _, axs = plt.subplots(5, figsize=(8, 6), sharex = True, layout="tight")
     
     sns.stripplot(x = data, jitter = 1.0, ax=axs[0])
-    sns.pointplot(x = data, errorbar = "sd", capsize=.2, ax=axs[1])
-    sns.pointplot(x = data, errorbar = "pi", capsize=.2, ax=axs[2])
-    sns.pointplot(x = data, errorbar = "se", capsize=.2, ax=axs[3])
-    sns.pointplot(x = data, errorbar = "ci", capsize=.2, ax=axs[4])
+    
+    if should_median:
+        sns.pointplot(x = data, errorbar = "sd", estimator="median", capsize=.2, ax=axs[1])
+        sns.pointplot(x = data, errorbar = "pi", estimator="median", capsize=.2, ax=axs[2])
+        sns.pointplot(x = data, errorbar = "se", estimator="median", capsize=.2, ax=axs[3])
+        sns.pointplot(x = data, errorbar = "ci", estimator="median", capsize=.2, ax=axs[4])
+    else: 
+        sns.pointplot(x = data, errorbar = "sd", capsize=.2, ax=axs[1])
+        sns.pointplot(x = data, errorbar = "pi", capsize=.2, ax=axs[2])
+        sns.pointplot(x = data, errorbar = "se", capsize=.2, ax=axs[3])
+        sns.pointplot(x = data, errorbar = "ci", capsize=.2, ax=axs[4])
     
     axs[0].set_title((data.name + " " + addition).strip())
     axs[1].set_title("Standard deviation")
