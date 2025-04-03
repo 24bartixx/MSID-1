@@ -33,6 +33,7 @@ Exploratory Data Analysis (EDA) using Python, focusing on both numerical and cat
     │ ├── read_data.py                  # reads data from data/data.csv and converts them to DataFrame
     │ └── errorbar.py                   # for creating errorbars to avoid code duplication and follow custom format
     ├── statistics/                     # CSVs with statistics 
+    ├── .gitignore                      # Information for git which file omit
     ├── data_analysis_main.py           # Main script to generate all the files 
     ├── environment.yml                 # Conda environment with required packages
     ├── RAPORT.md                       # Summary and visual insights 
