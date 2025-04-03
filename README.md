@@ -43,5 +43,7 @@ Exploratory Data Analysis (EDA) using Python, focusing on both numerical and cat
     └── Task.pdf                        # Task description
 </pre>
 
-
-
+## Generate all the charts and statistics
+```
+python data_analysis_main.py
+```
