@@ -17,11 +17,8 @@ Exploratory Data Analysis (EDA) using Python, focusing on both numerical and cat
 <pre> project/ 
     ├── data/                           # holds the data set
     │ └── data.csv                      # students data set
-    │ ├── scripts/                      # helper functions
-    │ ├── consts.py                     # constant values, mainly dictonaries for converting categorical attributes
-    │ ├── read_data.py                  # reads data from data/data.csv and converts them to DataFrame
-    │ └── errorbar.py                   # for creating errorbars to avoid code duplication and follow custom format
-    │ ├── notebook/                     # each notebook corresponds to the plot type from the task
+    ├── generated_charts/               # Output plots 
+    ├── notebook/                     # each notebook corresponds to the plot type from the task
     │ ├── boxplots.ipynb                # Grade 3.5 
     │ ├── violinplots.ipynb             # Grade 3.5 
     │ ├── histograms.ipynb              # Grade 4.0 
@@ -31,11 +28,17 @@ Exploratory Data Analysis (EDA) using Python, focusing on both numerical and cat
     │ ├── PCA.ipynb                     # Grade 5.5 
     │ ├── initial_statistics.ipynb      # Grade 3.0 
     │ └── config.py                     # access script/ module
-    │ ├── statistics/                   # CSVs with statistics 
-    ├── generated_charts/               # Output plots 
+    ├── scripts/                        # helper functions
+    │ ├── consts.py                     # constant values, mainly dictonaries for converting categorical attributes
+    │ ├── read_data.py                  # reads data from data/data.csv and converts them to DataFrame
+    │ └── errorbar.py                   # for creating errorbars to avoid code duplication and follow custom format
+    ├── statistics/                     # CSVs with statistics 
     ├── data_analysis_main.py           # Main script to generate all the files 
+    ├── environment.yml                 # Conda environment with required packages
     ├── RAPORT.md                       # Summary and visual insights 
     ├── README.md                       # Project general info
+    ├── requirements.txt                # pip-compatible package list 
+                                        # (all the libraries I installed with "conda install" should have pip equivalents)
     └── Task.pdf                        # Task description
 </pre>
 
